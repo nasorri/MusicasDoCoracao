@@ -23,11 +23,11 @@
     /* Borda arredondada */
 }
 
-/* Efeito ao passar o mouse sobre a barra de rolagem */
-::-webkit-scrollbar-thumb:hover {
-    background: #df3333;
-    /* Cor mais escura ao passar o mouse */
-}
+    /* Efeito ao passar o mouse sobre a barra de rolagem */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #df3333;
+        /* Cor mais escura ao passar o mouse */
+    }
 
 /* Para Firefox
 html {
@@ -109,13 +109,13 @@ body {
     gap: 10px;
 }
 
-.start-button:hover {
-    background-color: #218838;
-}
+    .start-button:hover {
+        background-color: #218838;
+    }
 
-.start-button i {
-    font-size: 20px;
-}
+    .start-button i {
+        font-size: 20px;
+    }
 
 .info-section {
     display: flex;
@@ -137,23 +137,23 @@ body {
     align-items: flex-start;
 }
 
-.info-box i {
-    font-size: 24px;
-    color: #ff4d4d;
-    /* Mesma cor do ícone do coração */
-    margin-bottom: 10px;
-}
+    .info-box i {
+        font-size: 24px;
+        color: #ff4d4d;
+        /* Mesma cor do ícone do coração */
+        margin-bottom: 10px;
+    }
 
-.info-box h2 {
-    color: #000;
-    font-size: 20px;
-    margin-bottom: 5px;
-}
+    .info-box h2 {
+        color: #000;
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
 
-.info-box p {
-    font-size: 16px;
-    color: #333;
-}
+    .info-box p {
+        font-size: 16px;
+        color: #333;
+    }
 
 .offer-section {
     margin-top: 60px;
@@ -165,63 +165,58 @@ body {
     width: 880px;
 }
 
-.offer-section h2 {
-    font-size: 24px;
-    color: #ff4d4d;
-    margin-bottom: 10px;
-}
+    .offer-section h2 {
+        font-size: 24px;
+        color: #ff4d4d;
+        margin-bottom: 10px;
+    }
 
-.offer-section p {
-    font-size: 20px;
-    color: #000;
-    margin-bottom: 10px;
-}
+    .offer-section p {
+        font-size: 20px;
+        color: #000;
+        margin-bottom: 10px;
+    }
 
 .audio-section {
-    /* margin-top: 60px;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* gap: 20px; */
+    margin-top: 25px;
+    align-items: center;
+    max-width: 1082px;
+}
+
+    .audio-section h2 {
+        font-size: 26px;
+        color: #000000;
+        margin-bottom: 20px;
+    }
+
+.audio-box {
     background: white;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    width: 880px; */
-
-    /* display: flex; */
-    justify-content: center;
-    gap: 20px;
-    margin-top: 25px;
-}
-
-.audio-section h2 {
-    font-size: 26px;
-    color: #000000;
-    margin-bottom: 20px;
-}
-
-.audio-box {
-    background: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* width: 300px; */
+    /* width: 80%; */
     text-align: center;
     display: flex;
     flex-direction: column;
-    /* align-items: flex-start; */
+    align-items: center;
 }
 
-.audio-box p {
-    font-size: 18px;
-    color: #000;
-    margin-bottom: 10px;
-}
+    .audio-box p {
+        font-size: 18px;
+        color: #000;
+        margin-bottom: 25px;
+        width: 80%;
+    }
 
-.audio-box small {
-    font-size: 14px;
-    color: #555;
-    display: block;
-    margin-top: 10px;
-}
+    .audio-box small {
+        font-size: 14px;
+        color: #555;
+        display: block;
+        margin-top: 25px;
+    }
 
 .steps-section {
     margin-top: 60px;
@@ -260,34 +255,52 @@ body {
     padding: 40px;
     border-radius: 10px;
     text-align: center;
-    width: 90%;
+    width: 80%;
     max-width: 880px;
     color: white;
 }
 
-.final-section h2 {
-    font-size: 26px;
-    margin-bottom: 10px;
-}
+    .final-section h2 {
+        font-size: 26px;
+        margin-bottom: 10px;
+    }
 
-.final-section p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
+    .final-section p {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
 
 /* Responsividade */
-@media (max-width: 600px) {
+@media (max-width: 800px) {
+    .info-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info-box {
+        width: 80%;
+    }
+
+    .audio-section {
+        width: 80%;
+        align-items: center;
+    }
+
+    .audio-box {
+        width: 100%;
+    }
+
     .final-section {
         padding: 30px;
     }
 
-    .final-section h2 {
-        font-size: 22px;
-    }
+        .final-section h2 {
+            font-size: 22px;
+        }
 
-    .final-section p {
-        font-size: 16px;
-    }
+        .final-section p {
+            font-size: 16px;
+        }
 
     .start-button {
         font-size: 18px;
