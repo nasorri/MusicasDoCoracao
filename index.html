@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Músicas do Coração</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <script type="text/javascript" src="script.js"></script>
@@ -19,7 +20,7 @@
             Transforme seus sentimentos em melodias únicas através da inteligência artificial.
             Cada música é criada especialmente para tocar sua alma.
         </p>
-        <button onclick="openWhatsApp();" class ="start-button"><i class="fas fa-comment"></i> Quero Começar</button>
+        <button onclick="openWhatsApp();" class="start-button"><i class="fas fa-comment"></i> Iniciar Conversa</button>
     </header>
 
     <section class="info-section">
@@ -51,7 +52,7 @@
                 <source src="assets/sample.mpeg" type="audio/mpeg">
                 Seu navegador não suporta o elemento de áudio.
             </audio>
-            <small>* Esta é apenas uma demonstração. Sua música será única e personalizada.</small>
+            <small>* Esta é apenas uma demonstração, sua música será única e personalizada.</small>
         </div>
     </section>
 
@@ -59,7 +60,7 @@
 
     <section class="offer-section">
 
-        <div class="offer-box">
+        <div class="steps-section">
             <div class="step-box">
                 <div class="step-number">1</div>
                 <p>Inicie uma conversa conosco pelo WhatsApp</p>
@@ -70,37 +71,38 @@
             </div>
             <div class="step-box">
                 <div class="step-number">3</div>
-                <p>Receba sua música personalizada criada com IA</p>
+                <p>Receba sua música personalizada, única</p>
             </div>
         </div>
         <div class="offer-box">
-            <h2>Oferta Especial</h2>
-            <p><strong>Por Apenas R$ 29,90</strong></p>
-            <p>O melhor presente para uma pessoa especial</p>
-            <button class="start-button"><i class="fas fa-comment"></i> Iniciar Conversa</button>
+            <div class="offer-title">Super Oferta</div>
+            <p><strong>Apenas R$ 29,90</strong></p>
+            <p>O seu melhor presente para uma pessoa especial</p>
+            <button onclick="openWhatsApp();" class="start-button"><i class="fas fa-comment"></i> Iniciar Conversa</button>
         </div>
     </section>
 
-
-    <section class="steps-section">
-        <div class="step-box">
-            <div class="step-number">1</div>
-            <p>Inicie uma conversa conosco pelo WhatsApp</p>
-        </div>
-        <div class="step-box">
-            <div class="step-number">2</div>
-            <p>Compartilhe seus sentimentos e inspirações</p>
-        </div>
-        <div class="step-box">
-            <div class="step-number">3</div>
-            <p>Receba sua música personalizada criada com IA</p>
-        </div>
-    </section>
-
-    <section class="final-section">
+    <!--<section class="final-section">
         <h2>Pronto para criar sua música especial?</h2>
         <p>Comece agora mesmo uma conversa conosco e transforme seus sentimentos em uma melodia única.</p>
-        <button class="start-button"><i class="fas fa-comment"></i> Iniciar Conversa</button>
+        <button onclick="openWhatsApp();" class="start-button"><i class="fas fa-comment"></i> Iniciar Conversa</button>
+    </section>-->
+
+    <h2 class="como-funciona">Pronto para criar sua música?</h2>
+    <section class="final-section">
+        <div class="occasions">
+            <div class="occasion"><i class="fas fa-heart"></i> Noivado</div>
+            <div class="occasion"><i class="fas fa-ring"></i> Casamento</div>
+            <div class="occasion"><i class="fas fa-baby"></i> Nascimento</div>
+            <!--<div class="occasion"><i class="fas fa-hand-holding-heart"></i> Batizado</div>-->
+            <div class="occasion"><i class="fas fa-birthday-cake"></i> Aniversário</div>
+            <div class="occasion"><i class="fas fa-child"></i> Filhos</div>
+            <div class="occasion"><i class="fas fa-calendar"></i> Datas Especiais</div>
+            <div class="occasion"><i class="fas fa-award"></i> Reconhecimento</div>
+            <div class="occasion"><i class="fas fa-music"></i> Outras Ocasiões</div>
+            <p>Comece agora mesmo uma conversa conosco e transforme seus sentimentos em melodia.</p>
+        </div>
+
     </section>
 
 </body>
