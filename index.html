@@ -48,16 +48,29 @@
         <h2>Ouça um Exemplo</h2>
         <div class="audio-box">
             <p>
-                Esta é uma amostra de uma música criada com nossa IA.
+                Navegue abaixo e ouça algumas músicas criadas com nossa IA.
                 Cada música é única e personalizada de acordo com seus sentimentos.
             </p>
-            <audio controls>
+            <!--<audio controls>
                 <source src="assets/sample_new.mpeg" type="audio/mpeg">
                 Seu navegador não suporta o elemento de áudio.
-            </audio>
+            </audio>-->
+            <div class="carousel">
+                <button onclick="prevAudio()" title="Anterior">&#9665;</button>
+                <audio id="audioPlayer" controls>
+                    <source src="" type="audio/mpeg" />
+                    Seu navegador não suporta o elemento de áudio.
+                </audio>
+                <button onclick="nextAudio()" title="Próximo">&#9655;</button>
+            </div>
             <small>* Esta é apenas uma demonstração, sua música será única e personalizada.</small>
         </div>
     </section>
+
+    <script>
+        const audioPlayer = document.getElementById("audioPlayer");
+        audioPlayer.src = audioFiles[0];
+    </script>
 
     <h2 class="como-funciona">Como Funciona</h2>
 
