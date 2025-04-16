@@ -5,9 +5,20 @@ function openWhatsApp() {
     window.open(url, '_blank');
 }
 
+function openForm() {
+    const url = `https://forms.gle/KSGrS9kXQsovQ7tFA`;
+    window.open(url, '_blank');
+}
+
 const audioFiles = [
-    "assets/sample.mpeg",
-    "assets/sample_new.mpeg"
+    "assets/sample_01.mpeg",
+    "assets/sample_02.mpeg",
+    "assets/sample_03.mpeg",
+    "assets/sample_04.mpeg",
+    "assets/sample_05.mpeg",
+    "assets/sample_06.mpeg",
+    "assets/sample_07.mpeg",
+    "assets/sample_08.mpeg"
 ];
 
 let currentIndex = 0;
@@ -26,5 +37,3 @@ function nextAudio() {
     currentIndex = (currentIndex + 1) % audioFiles.length;
     loadAudio(currentIndex);
 }
-
-//loadAudio(currentIndex);
